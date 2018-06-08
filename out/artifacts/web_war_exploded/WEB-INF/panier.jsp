@@ -2,13 +2,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
-<link href="CSSIndex.css" rel="stylesheet" type="text/css">
+<link href="../CSSIndex.css" rel="stylesheet" type="text/css">
 
 
 <header class="header">
-    <a class="logo"><img src="images/logo.png" class="logo"></a>
+    <a class="logo"><img src="../images/logo.png" class="logo"></a>
     <nav class="topnav">
-        <a href="index.jsp">Accueil</a>
+        <a href="../index.jsp">Accueil</a>
         <a href="connexion.jsp">Connexion</a>
         <a href="panier.jsp">Panier</a>
         <a href="more">A Propos</a>
@@ -18,7 +18,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Mon panier</title>
-    <link type="text/css" rel="stylesheet" href="connexinscrip.css" />
+    <link type="text/css" rel="stylesheet" href="../connexinscrip.css" />
 </head>
 <body>
 <div>

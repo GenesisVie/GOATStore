@@ -8,9 +8,9 @@
   <header class="header">
       <a class="logo"><img src="images/logo.png" class="logo"></a>
       <nav class="topnav">
-          <a href="accueil">Accueil</a>
-          <a href="connexion.jsp">Connexion</a>
-          <a href="panier">Panier</a>
+          <a href="./index.jsp">Accueil</a>
+          <a href="./WEB-INF/connexion.jsp">Connexion</a>
+          <a href="./WEB-INF/panier.jsp">Panier</a>
           <a href="more">A Propos</a>
       </nav>
   </header>
