@@ -1,6 +1,5 @@
 <%@ page pageEncoding="UTF-8" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <html>
 <link href="../CSSIndex.css" rel="stylesheet" type="text/css">
 
@@ -9,7 +8,7 @@
     <a class="logo"><img src="images/logo.png" class="logo"></a>
     <nav class="topnav">
         <a href="./index.jsp">Accueil</a>
-        <a href="./WEB-INF/connexion.jsp">Connexion</a>
+        <a href="/connexion">Connexion</a>
         <a href="./WEB-INF/panier.jsp">Panier</a>
         <a href="more">A Propos</a>
     </nav>
@@ -21,22 +20,26 @@
     <link type="text/css" rel="stylesheet" href="connexinscrip.css" />
 </head>
 <body>
-<div>
-    <form method="get" action="Connexion">
-        <fieldset>
-            <legend>Connexion </legend>
+<form method="post" action="connexion">
+    <fieldset>
+        <legend>Connexion</legend>
+        <p>Vous pouvez vous connecter via ce formulaire.</p>
 
-            <label for="pseudo">Pseudo </label>
-            <input type="text" id="pseudo" name="pseudo" value="" size="20" maxlength="20" />
-            <br />
+        <label for="email">Adresse email <span class="requis">*</span></label>
+        <input type="email" id="email" name="email" value="${user.email}"/>
+        <span class="erreur">${form.erreurs['email']}</span>
+        <br />
 
-            <label for="motdepasse">Mot de passe </label>
-            <input type="password" id="motdepasse" name="motdepasse" value="" size="20" maxlength="20" />
-            <br />
-        </fieldset>
-        <input type="submit" value="Valider"  />
-        <a href="creationcompte.jsp"> Pas de compte ? </a>
-    </form>
-</div>
+        <label for="motdepasse">Mot de passe <span class="requis">*</span></label>
+        <input type="password" id="motdepasse" name="motdepasse" value="" size="20" maxlength="20" />
+        <span class="erreur">${form.erreurs['motdepasse']}</span>
+        <br />
+
+        <input type="submit" value="Connexion" class="sansLabel" />
+        <br />
+        <a href="/inscription&"> Pas de compte ? </a>
+        <p class="${empty form.erreurs ? 'succes' : 'erreur'}">${form.resultat}</p>
+    </fieldset>
+</form>
 </body>
 </html>

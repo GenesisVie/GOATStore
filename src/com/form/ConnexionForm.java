@@ -69,7 +69,7 @@ public final class ConnexionForm {
      */
     private void validationmotdepasse( String motdepasse ) throws Exception {
         if ( motdepasse != null ) {
-            if ( motDePasse.length() < 3 ) {
+            if ( motdepasse.length() < 3 ) {
                 throw new Exception( "Le mot de passe doit contenir au moins 3 caractères." );
             }
         } else {

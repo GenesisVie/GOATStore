@@ -9,7 +9,7 @@
       <a class="logo"><img src="images/logo.png" class="logo"></a>
       <nav class="topnav">
           <a href="./index.jsp">Accueil</a>
-          <a href="./WEB-INF/connexion.jsp">Connexion</a>
+          <a href="/connexion">Connexion</a>
           <a href="./WEB-INF/panier.jsp">Panier</a>
           <a href="more">A Propos</a>
       </nav>

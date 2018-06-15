@@ -7,6 +7,12 @@ public class User {
     private String motdepasse;
     private String nom;
 
+    public User()
+    {
+        mail="";
+        motdepasse="";
+        nom="";
+    }
     public User(String em, String mdp, String n){
         mail = em;
         motdepasse = mdp;

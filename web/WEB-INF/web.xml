@@ -6,13 +6,23 @@
            version="3.0">
 
     <servlet>
-        <servlet-name>servlettest</servlet-name>
-        <servlet-class>com.servlet.servlettest</servlet-class>
+        <servlet-name>Connexion</servlet-name>
+        <servlet-class>com.servlet.Connexion</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>servlettest</servlet-name>
-        <url-pattern>/servlettest</url-pattern>
+        <servlet-name>Connexion</servlet-name>
+        <url-pattern>/connexion</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Inscription</servlet-name>
+        <servlet-class>com.servlet.Inscription</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Inscription</servlet-name>
+        <url-pattern>/inscription</url-pattern>
     </servlet-mapping>
 
 </web-app>
