@@ -1,0 +1,94 @@
+footer a {
+    color: black;
+}
+
+footer p {
+
+	color: black;
+}
+
+
+footer .footer {
+	background: #BEBEBE;
+    height: 23px;
+    color: #FFF!important;
+    font-size: 11px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+div#_layout_bottom div.links {
+    padding-top: 2.0em;
+    padding-bottom: 1.0em;
+}
+
+footer {
+    /* border: 0; */
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+ footer .boxes ul {
+    /* border: 0; */
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    list-style: none;
+    
+}
+
+.boxes {
+	/*partie contact + produits sunset drone*/
+	margin-top: 20px;
+    color: black;
+}
+
+.head, h2{
+
+    color : black;
+	font-weight: bold;
+}
+
+.footer_email {
+
+	padding: 10px 12px;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 0;
+    color: #262626;
+    background-color: #fff;
+    border-color: #fff;
+    border-width: 2px;
+    height: 42px;
+
+}
+
+.boxes {
+
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-around;
+    margin : 30px;
+    padding-top : 10px;
+
+}
+
+
+#newsletter {
+    margin : 10px;
+    margin-top: -10px;
+    font-size: 11px;
+}
+
+#newsletter_bouton {
+
+   /* background-image: url(../img/next.png);
+    background-repeat: no-repeat;*/
+    width: 25px;
+    height: 20px;
+    padding: 3px;
+}
+

@@ -2,63 +2,119 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
-<link href="../CSSIndex.css" rel="stylesheet" type="text/css">
-
-
-<header class="header">
-    <a class="logo"><img src="../images/logo.png" class="logo"></a>
-    <nav class="topnav">
-        <a href="../index.jsp">Accueil</a>
-        <a href="connexion.jsp">Connexion</a>
-        <a href="panier.jsp">Panier</a>
-        <a href="more">A Propos</a>
-    </nav>
-</header>
-
 <head>
-    <meta charset="utf-8" />
-    <title>Mon panier</title>
-    <link type="text/css" rel="stylesheet" href="../connexinscrip.css" />
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/panier.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Sunset Drone | Les spécialistes de la prise de vue aérienne</title>
 </head>
+
 <body>
-<div>
-    <form method="get" action="Panier">
-        <style>
-            table {
-                font-family: arial, sans-serif;
-                border-collapse: collapse;
-                width: 100%;
-            }
 
-            td, th {
-                border: 1px solid #dddddd;
-                text-align: left;
-                padding: 8px;
-            }
+<!--NAVBAR-->
+<nav>
+    <div class="logo_nav">
+        <a class="logo" href="index.jsp">
+            <img src="img/logo.png" alt="logo GOAT" />
+            <p id="titre">Store</p>
+        </a>
+    </div>
 
-            tr:nth-child(even) {
-                background-color: #dddddd;
-            }
-        </style>
-        <body>
+    <ul class="menu">
+        <li>
+            <a href="/produit">Offres</a>
+        </li>
 
-        <h2>HTML Table</h2>
+        <li>
+            <a href="/connexion">Compte
+                <i class="petite material-icons">account_box</i>
+            </a>
+        </li>
+        <li>
+            <a href="panier.html">Panier
+                <i class="petite material-icons">add_shopping_cart</i>
+            </a>
+        </li>
+    </ul>
+</nav>
+<!-- END NAVBAR=====================-->
 
-        <table>
-            <tr>
-                <th>id</th>
-                <th>Produit</th>
-                <th>Montant</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>test 2000</td>
-                <td>free</td>
-            </tr>
-        </table>
-        </body>
-        <input type="submit" value="Payet"  />
-    </form>
+<!--MAIN-->
+
+<div id="layout_under_header">&nbsp;</div>
+
+<div id="main_layout">
+
+
+    <div id="content-slider" class="clr">
+        <div class="sous_header">
+
+            <!--SOCIAL MENU-->
+            <div class="social_icons">
+                <a target="_blank" href="https://www.facebook.com" class="icon facebook">
+                    <img src="img/facebook.png" alt="logo facebook"></a>
+                <a target="_blank" href="https://instagram.com" class="icon insta">
+                    <img src="img/insta.png" alt="logo insta"></a>
+
+            </div>
+            <!-- END SOCIAL MENU -->
+        </div>
+    <div id="message">
+        <h2>Mon panier (0)</h2>
+        <p>Aucun article ajouté à votre panier...</p>
+        <form action="/produit" class="button">
+            <input type="submit" name="send" class="lien" value=" →   Continuer les achats" >
+        </form>
+    </div>
+
 </div>
+
+
+
+
+
+
+<!--FOOTER-->
+<footer>
+
+
+    <div class="footer">
+
+
+        © GOAT Store 2018
+        <span class="linkDivider">|</span>
+        <a href="index.jsp">Politique relative aux cookies</a>
+
+
+        <div class="boxes">
+            <div id="box1">
+                <ul>
+                    <li class="head" id="mon_compte"><a href="/panier">MON Panier</a></li>
+                    <li><a href="/connexion">Se connecter</a></li>
+                    <li><a href="/inscription">Pas de compte ?</a></li>
+                </ul>
+            </div>
+
+            <div id="box2">
+                <ul>
+                    <li class="head"><a href="/produit">SNEAKERS nwaaar</a></li>
+                    <li>Adidas</li>
+                    <li>Nike</li>
+                    <li>Reebok</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+<!-- END FOOTER  -->
+
 </body>
 </html>

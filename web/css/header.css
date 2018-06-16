@@ -1,0 +1,123 @@
+
+/*NAVBAR====================================================*/
+
+nav {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+    background-color: #FFFFFF;
+    max-height: 75px;
+}
+
+.logo_nav {
+	float: left;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    min-width: 175px;
+    height: auto;
+}
+
+.logo_nav a {
+	display: block;
+
+
+}
+.logo_nav .logo img {
+    width: 130px;
+    height: 45px;
+    padding-left: 15px
+}
+
+#titre {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-size: 1.5em;
+    max-width: 175px;
+    margin-top: -10px;
+	
+
+}
+
+.menu {
+	justify-content: space-around;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+
+}
+
+.menu li {
+	list-style: none;
+
+}
+
+
+#layout_under_header {
+	height: 75px;
+    border-bottom: 1px solid #2F4F4F;
+	
+}
+
+#contener {
+
+	display : flex;
+	flex-direction : row ;
+	justify-content: flex-end;
+}
+
+
+.sous_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px 0 10px 0;
+    align-items: center;
+    
+    position: relative;
+    z-index: 30;
+}
+
+
+
+/*SEARCHBAR=========*/
+.searchbar {
+
+}
+
+
+.searchbar .champ {
+	width: 300px; 
+	height: 30px;
+}
+
+.searchbar .bouton {
+	width: auto;
+    height: auto;
+}
+
+#loupe {
+	width: auto;
+    height: 16px;
+}
+
+
+/*END SEARCHBAR===============================*/
+
+/*SOCIAL ICONS=========================*/
+.social_icons {
+	margin-left: 70px;
+    margin-right: 10px;
+
+}
+
+.social_icons img {
+	height: 30px;
+	width: 30px;
+}
+
+/*END SOCIAL ICONS=================*/
+

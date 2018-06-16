@@ -1,0 +1,60 @@
+.grid_figure {
+    display: inline-block;
+
+}
+
+.grid_figure h1 {
+  text-align: center;
+
+}
+
+
+.sneakers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 15% 0 15%;
+  flex-wrap: wrap;
+}
+
+
+figure {
+  height: 400px;
+  border: 1px solid #2F4F4F;
+  background: white;
+
+}
+
+
+figure img {
+  width: 270px;
+}
+
+
+.info {
+
+}
+
+
+.sneakers {
+  text-align: center;
+  font-size: 1.3em;
+  padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.prix {
+  text-align: center;
+  font-size: 1em;
+  padding-top: 20px;
+
+}
+
+.details {
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 1.1em;
+
+}

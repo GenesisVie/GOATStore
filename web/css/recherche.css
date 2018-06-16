@@ -1,0 +1,44 @@
+#message{
+  
+  padding : 50px;
+  padding-bottom: 40px;
+
+}
+
+
+.flex-container > *{
+  min-height: 10px;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow:  wrap;
+  padding: 0px;
+
+  list-style: none;
+ 
+  justify-content: space-around;
+  height: 110%;
+
+}
+
+.flex-item {
+  
+  padding: 0px;
+  width: 250px;
+  height: 220px;
+  line-height: 20px;
+  
+  border-style: 3em;
+  border: 1px solid #2F4F4F;
+  background-color: white;
+  color: black;
+
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  
+}
+
+

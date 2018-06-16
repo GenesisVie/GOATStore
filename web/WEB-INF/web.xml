@@ -21,8 +21,29 @@
     </servlet>
 
     <servlet-mapping>
+        <servlet-name>Produit</servlet-name>
+        <url-pattern>/produit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Produit</servlet-name>
+        <servlet-class>com.servlet.Produit</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
         <servlet-name>Inscription</servlet-name>
         <url-pattern>/inscription</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>GestionTestJDBC</servlet-name>
+        <servlet-class>com.bdd.GestionTestJDBC</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GestionTestJDBC</servlet-name>
+        <url-pattern>/testjdbc</url-pattern>
     </servlet-mapping>
 
 </web-app>
