@@ -38,7 +38,7 @@
             </a>
         </li>
         <li>
-            <a href="panier.html">Panier
+            <a href="/panier">Panier
                 <i class="petite material-icons">add_shopping_cart</i>
             </a>
         </li>
@@ -81,23 +81,23 @@
         <h1>Créer un compte</h1>
     </div>
 
-    <form method="post" action="inscription" action="index.jsp">
+    <form id="connexion" method="post" action="/inscription" action="index.jsp">
         <div>
             <label for="email">Adresse email <span class="requis">*</span></label>
-            <input type="email" id="email" name="email" value="${param.email}" size="20" maxlength="60" />
-            <span class="erreur">${erreurs['email']}</span>
+            <input type="email" id="email" name="email" placeholder="id@example.com"/>
+            <span class="erreur">${form.erreurs['email']}</span>
         </div>
         <br/><br/>
         <div>
             <label for="motdepasse">Mot de passe <span class="requis">*</span></label>
-            <input type="password" id="motdepasse" name="motdepasse" value="" size="20" maxlength="20" />
-            <span class="erreur">${erreurs['motdepasse']}</span>
+            <input type="password" id="motdepasse" name="motdepasse"/>
+            <span class="erreur">${form.erreurs['motdepasse']}</span>
         </div>
         <br/><br/>
         <div>
             <label for="confirmation">Confirmation du mot de passe <span class="requis">*</span></label>
-            <input type="password" id="confirmation" name="confirmation" value="" size="20" maxlength="20" />
-            <span class="erreur">${erreurs['confirmation']}</span>
+            <input type="password" id="confirmation" name="confirmation"/>
+            <span class="erreur">${form.erreurs['motdepasse']}</span>
         </div>
         <br/><br/>
         <div>
@@ -107,11 +107,9 @@
         </div>
         <br/><br/>
         <div class="button">
-            <input type="submit" value="Inscription" class="sansLabel" />
-            <br />
-
-            <p class="${empty erreurs ? 'succes' : 'erreur'}">${resultat}</p>
+            <button type="submit" value="Inscription"/>Inscription</button>
         </div>
+        <p class="${empty erreurs ? 'succes' : 'erreur'}">${resultat}</p>
 
     </form>
 

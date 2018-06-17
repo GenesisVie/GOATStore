@@ -36,7 +36,7 @@ index.jsp<%@ page pageEncoding="UTF-8" %>
             </a>
         </li>
         <li>
-            <a href="panier.html">Panier
+            <a href="/panier">Panier
                 <i class="petite material-icons">add_shopping_cart</i>
             </a>
         </li>
@@ -79,22 +79,26 @@ index.jsp<%@ page pageEncoding="UTF-8" %>
     <h1>Connectez-vous à votre espace client GOAT</h1>
 </div>
 
-<form id="inscription" action="index.jsp" >
+<form method="post" id="connexion" action="connexion">
     <div>
-        <label for="username">Email :</label>
-        <input type="email" id="username" placeholder="id@example.com" />
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="id@example.com"/>
+        <span class="erreur">${form.erreurs['email']}</span>
     </div>
     <br/><br/>
     <div>
-        <label for="password">Mot de passe :</label>
-        <input type="password" id="password" />
+        <label for="motdepasse">Mot de passe :</label>
+        <input type="password" id="motdepasse" name="motdepasse"/>
+        <span class="erreur">${form.erreurs['motdepasse']}</span>
     </div>
     <br/>
     <a href="/inscription" id="mdp_forget">Pas de compte ?</a>
-    <br/><br/>
+    <br/>
+    <p class="${empty form.erreurs ? 'succes' : 'erreur'}">${form.resultat}</p>
+    <br/>
     <div class="button">
-        <button type="submit">Connexion</button>
-    </div>
+        <button type="submit" value="Connexion" class="sansLabel">Connexion</button>
+        </div>
 
 </form>
 

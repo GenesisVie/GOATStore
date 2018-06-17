@@ -36,7 +36,7 @@
             </a>
         </li>
         <li>
-            <a href="panier.html">Panier
+            <a href="/panier">Panier
                 <i class="petite material-icons">add_shopping_cart</i>
             </a>
         </li>
@@ -107,10 +107,10 @@
                     <figure>
                         <figcaption class="title-1">
                             <h1>Collab Off White</h1>
-                            <p> Off-White x Converse Chuck Taylor The Ten</p>
+                            <p>Off-White x Nike Air VaporMax White</p>
                             <a href="/produit">en savoir plus</a>
                         </figcaption>
-                        <img src="img/convWhite.jpg" alt="" id="i-1" class="f">
+                        <img src="img/vaporWhite.jpg" alt="" id="i-1" class="f">
                     </figure>
 
                     <figure>
@@ -134,7 +134,7 @@
                     <figure>
                         <figcaption class="title-4">
                             <h1>Air Max 98</h1>
-                            <p>Nike Air Max 98 "Wolf Grey"</p>
+                            <p>Nike Air Max 98 "Wolf Grey</p>
                             <a href="/produit">Voir</a>
                         </figcaption>
                         <img src="img/nike98.jpg" alt="" id="i-4" class="f">

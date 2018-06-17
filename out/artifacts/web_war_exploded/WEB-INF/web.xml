@@ -5,6 +5,14 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
            version="3.0">
 
+    <session-config>
+        <session-timeout>10</session-timeout>
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
     <servlet>
         <servlet-name>Connexion</servlet-name>
         <servlet-class>com.servlet.Connexion</servlet-class>
@@ -16,19 +24,20 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>Deconnexion</servlet-name>
+        <servlet-class>com.servlet.Deconnexion</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Deconnexion</servlet-name>
+        <url-pattern>/deconnexion</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>Inscription</servlet-name>
         <servlet-class>com.servlet.Inscription</servlet-class>
     </servlet>
 
-    <servlet-mapping>
-        <servlet-name>Produit</servlet-name>
-        <url-pattern>/produit</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>Produit</servlet-name>
-        <servlet-class>com.servlet.Produit</servlet-class>
-    </servlet>
 
     <servlet-mapping>
         <servlet-name>Inscription</servlet-name>
@@ -36,16 +45,41 @@
     </servlet-mapping>
 
 
+    <servlet-mapping>
+        <servlet-name>Produit</servlet-name>
+        <url-pattern>/produit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Panier</servlet-name>
+        <servlet-class>com.servlet.Panier</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>Panier</servlet-name>
+        <url-pattern>/panier</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Produit</servlet-name>
+        <servlet-class>com.servlet.Produit</servlet-class>
+    </servlet>
+
     <servlet>
         <servlet-name>GestionTestJDBC</servlet-name>
-        <servlet-class>com.bdd.GestionTestJDBC</servlet-class>
+        <servlet-class>com.servlet.GestionTestJDBC</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>GestionTestJDBC</servlet-name>
-        <url-pattern>/testjdbc</url-pattern>
+        <url-pattern>/JDBC</url-pattern>
     </servlet-mapping>
 
+    <listener>
+
+        <listener-class>com.config.InitialisationDaoFactory</listener-class>
+
+    </listener>
+
 </web-app>
-
-

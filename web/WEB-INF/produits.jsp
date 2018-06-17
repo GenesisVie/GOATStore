@@ -35,7 +35,7 @@ index.jsp<%@ page pageEncoding="UTF-8" %>
             </a>
         </li>
         <li>
-            <a href="panier.html">Panier
+            <a href="/panier">Panier
                 <i class="petite material-icons">add_shopping_cart</i>
             </a>
         </li>
@@ -121,7 +121,7 @@ index.jsp<%@ page pageEncoding="UTF-8" %>
                         Off-White x Nike Air VaporMax White
                     </div>
                     <div class="prix">
-                        599,99€
+                        599€
                     </div>
                     <div class="details">
                         <a href="/panier">
@@ -141,7 +141,7 @@ index.jsp<%@ page pageEncoding="UTF-8" %>
                         adidas yeezy boost 350 v2 "beluga 2.0"
                     </div>
                     <div class="prix">
-                        600 €
+                        699 €
                     </div>
                     <div class="details">
                         <a href="/panier">

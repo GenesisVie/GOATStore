@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <title>Sunset Drone | Les spécialistes de la prise de vue aérienne</title>
+    <title>GOAT Store | Sneakers</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
             </a>
         </li>
         <li>
-            <a href="panier.html">Panier
+            <a href="/panier">Panier
                 <i class="petite material-icons">add_shopping_cart</i>
             </a>
         </li>
@@ -69,7 +69,7 @@
         <h2>Mon panier (0)</h2>
         <p>Aucun article ajouté à votre panier...</p>
         <form action="/produit" class="button">
-            <input type="submit" name="send" class="lien" value=" →   Continuer les achats" >
+            <input type="submit" name="send" class="lien" value="→Continuer les achats" >
         </form>
     </div>
 

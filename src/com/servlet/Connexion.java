@@ -16,11 +16,26 @@ public class Connexion extends HttpServlet {
     public static final String ATT_FORM         = "form";
     public static final String ATT_SESSION_USER = "sessionUtilisateur";
     public static final String VUE              = "/WEB-INF/connexion.jsp";
+    public static final String ACCES_RESTREINT  = "/WEB-INF/deconnexion.jsp";
+
 
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
-        /* Affichage de la page de connexion */
-        this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
+        /* Récupération de la session depuis la requête */
+        HttpSession session = request.getSession();
+
+        /*
+         * Si l'objet utilisateur n'existe pas dans la session en cours, alors
+         * l'utilisateur n'est pas connecté.
+         */
+        if ( session.getAttribute( ATT_SESSION_USER ) == null ) {
+            /* Redirection vers la page publique */
+            this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
+        } else {
+            /* Affichage de la page restreinte */
+            this.getServletContext().getRequestDispatcher( ACCES_RESTREINT ).forward( request, response );
+        }
     }
+
 
     public void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
         /* Préparation de l'objet formulaire */

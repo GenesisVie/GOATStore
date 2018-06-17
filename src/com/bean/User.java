@@ -3,35 +3,26 @@ package com.bean;
 
 public class User {
 
-    private String mail;
+    private Long id;
+    private String email;
     private String motdepasse;
     private String nom;
 
-    public User()
-    {
-        mail="";
-        motdepasse="";
-        nom="";
+    public Long getId() {
+        return id;
     }
-    public User(String em, String mdp, String n){
-        mail = em;
-        motdepasse = mdp;
-        nom = n;
-    }
-
-    public User (String em, String mdp){
-        mail = em;
-        motdepasse = mdp;
+    public void setId( Long id ) {
+        this.id = id;
     }
 
     public void setmail(String email) {
 
-        this.mail = email;
+        this.email = email;
     }
 
     public String getmail() {
 
-        return mail;
+        return email;
     }
 
     public void setmotdepasse(String motDePasse) {

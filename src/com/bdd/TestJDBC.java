@@ -1,4 +1,3 @@
-/*
 package com.bdd;
 
 import javax.servlet.http.HttpServletRequest;
@@ -7,62 +6,57 @@ import java.util.List;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
+import java.sql.*;
+import com.bean.User;
 
 public class TestJDBC {
-*/
-/*
-    /* La liste qui contiendra tous les résultats de nos essais *//*
+ //La liste qui contiendra tous les résultats de nos essais
 
     private List<String> messages = new ArrayList<String>();
 
     public List<String> executerTests( HttpServletRequest request ) {
         try {
-            messages.add( "Chargement du driver..." );*/
-/*
-            Class.forName( "com.mariadb.jdbc.Driver" );
+            messages.add( "Chargement du driver..." );
+            Class.forName( "org.mariadb.jdbc.Driver" );
             messages.add( "Driver chargé !" );
         } catch ( ClassNotFoundException e ) {
             messages.add( "Erreur lors du chargement : le driver n'a pas été trouvé dans le classpath ! <br/>"
                     + e.getMessage() );
         }
 
-        /* Connexion à la base de données *//*
+        // Connexion à la base de données
 
         String url = "jdbc:mariadb://localhost:3306/GOAT";
         String utilisateur = "java";
         String motDePasse = "admin";
         Statement statement = null;
         ResultSet resultat = null;
+        Connection connexion =null;
         try {
             messages.add( "Connexion à la base de données..." );
-            Connection connexion  = DriverManager.getConnection( url, utilisateur, motDePasse );
+            connexion  = DriverManager.getConnection( url, utilisateur, motDePasse );
             messages.add( "Connexion réussie !" );
 
-            */
-/* Création de l'objet gérant les requêtes *//*
+ //Création de l'objet gérant les requêtes
 
             statement = connexion.createStatement();
             messages.add( "Objet requête créé !" );
 
-            */
-/* Exécution d'une requête de lecture *//*
+ //Exécution d'une requête de lecture
 
-            resultat = statement.executeQuery( "SELECT id, email, mot_de_passe, nom FROM Utilisateur;" );
-            messages.add( "Requête \"SELECT id, email, mot_de_passe, nom FROM Utilisateur;\" effectuée !" );
+            resultat = statement.executeQuery( "SELECT id,nom, email, mot_de_passe FROM user;" );
+            messages.add( "Requête \"SELECT nom, mail, mdp FROM user;\" effectuée !" );
 
-            */
-/* Récupération des données du résultat de la requête de lecture *//*
+ //Récupération des données du résultat de la requête de lecture
 
             while ( resultat.next() ) {
-                int idUtilisateur = resultat.getInt( "id" );
+
                 String emailUtilisateur = resultat.getString( "email" );
                 String motDePasseUtilisateur = resultat.getString( "mot_de_passe" );
                 String nomUtilisateur = resultat.getString( "nom" );
-                */
-/* Formatage des données pour affichage dans la JSP finale. *//*
+ //Formatage des données pour affichage dans la JSP finale.
 
-                messages.add( "Données retournées par la requête : id = " + idUtilisateur + ", email = " + emailUtilisateur
+                messages.add( "Données retournées par la requête : email = " + emailUtilisateur
                         + ", motdepasse = "
                         + motDePasseUtilisateur + ", nom = " + nomUtilisateur + "." );
             }
@@ -97,4 +91,5 @@ public class TestJDBC {
         return messages;
     }
 }
-*/
+
+
